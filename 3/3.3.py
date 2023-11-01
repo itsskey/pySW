@@ -2,7 +2,7 @@
 def count_letters(text):
     dict_ = {}
     for item in text:
-        if item.isalpha():
+        if item.isalpha() and dict_.get(item) is None:
             dict_[item] = text.count(item)
     return dict_
 
