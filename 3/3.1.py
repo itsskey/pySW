@@ -1,8 +1,8 @@
 # TODO Напишите функцию для поиска индекса товара
 def search_fist_item(item, list_):
-    for i in range(len(list_)):
-        if items_list[i] == item:
-            return i
+    for index, fruit in enumerate(list_):
+        if (fruit == item):
+            return index
     return None
 
 
